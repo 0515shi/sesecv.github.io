@@ -235,6 +235,35 @@ main{
     height: auto;
 }
 
+label{
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+#projectBtn{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#projectBtn a{
+    color: white;
+    text-decoration: none;
+}
+
+#projectBtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46a0 100%);
+}
+
 
 /* Tablets and smaller screens */
 @media screen and (max-width: 1024px) {

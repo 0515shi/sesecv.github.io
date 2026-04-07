@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyProjects</title>
-    <link rel="stylesheet" href = "projects.css">
+    <link rel="stylesheet" href = "style.css">
 </head>
 <body>
-    
+
+    <nav class="navbar">    
+        <div id="navWrapper">
+            <ul>
+                <li><a href = "index.html">Home 🏠</a></li>
+
+                <li class="dropDownAboutMe">
+                    <a>About Me ▼</a>
+                    <div class="dropDownAboutMeContent">
+                        <a href="education.html">Education 📖</a>
+                        <a href="workingExperience.html">Working Experience 💼</a>
+                        <a href="skill.html">Skills 💻</a>
+                    </div>
+                </li>
+
+
+                <li><a href = "projects.html">Projects 🗂️</a></li>                
+                <li><a href = "contact.html" target="_blank">Contact Me 📞</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+     <main>
+            <div class="aboutMeContainerFormat">
+
+                <h3 class="aboutMeHeader">Projects 🗂️</h3>
+                    <div id="aboutMeProjectContentContainer" class="aboutMeContentContainer">
+                    <p class="aboutMeSmallHeader">Personal Portfolio & Messaging System</p>
+                    <ul class="ulAboutMeWe">
+                        <li>Developed a fully responsive personal portfolio website to present my CV, technical skills, and project work</li>
+                        <li>Integrated a contact form that captures user messages and stores them in a MySQL database through a Spring Boot REST API</li>
+                        <li>Enabled real-time form submission to allow users to asynchronously transmit messages from the frontend to backend API</li>
+                        <li>Demonstrated complete end-to-end full-stack integration, spanning frontend interaction, backend processing, and persistent data storage</li>
+                    </ul>
+
+                    <label for="projectBtn">Click here to learn more:</label>
+                    <button id="projectBtn"><a href="https://github.com/0515shi/sesecv.github.io">GitHub</a></button>
+
+                    <p class="aboutMeSmallHeader">Library Management System with Role-Based Access Control</p>
+                    <ul class="ulAboutMeWe">
+                        <li>Developed a full-stack library management system with three user roles (Admin, Librarian, Member) and session-based authentication</li>
+                        <li>Implemented full CRUD operations for book inventory management, including search by ISBN, title, or author</li>
+                        <li>Secured the application using Spring Security with BCrypt password encryption for login and RBAC protocols</li>
+                        <li>Utilized MyBatis with dynamic SQL and custom result mappings to handle complex database queries</li>
+                        <li>Managed user sessions with Redis, enabling 30-day persistent login functionality</li>
+                        <li>Designed a normalized MySQL database consisting of interconnected tables (users, booklet, borrowing records, etc.) with transaction management to ensure data integrity</li>
+                    </ul>
+
+                    <label for="projectBtn">Click here to learn more:</label>
+                    <button id="projectBtn"><a href="https://github.com/0515shi/Library_Management_System">GitHub</a></button>
+
+                    <p class="aboutMeSmallHeader">Autonomous Robot for Basketball Rim Detection & Shooting</p>
+                    <ul class="ulAboutMeWe">
+                        <li>Led all software and AI development in collaboration with Mechanical Engineering students who built the robot hardware.</li>
+                        <li>Developed a custom-trained YOLOv11 model for real-time basketball rim detection and autonomous shooting.</li>
+                        <li>Annotated 400 images to prepare the training dataset for the object detection model.</li>
+                        <li>Programmed Arduino to control movement, positioning, and shooting mechanism via USB serial communication.</li>
+                        <li>Integrated a USB camera for rim detection and distance estimation, with Python logic triggering shooting when within optimal range and detected objects.</li>
+                    </ul>
+
+                    <!-- <label for="projectBtn">Click here to learn more:</label>
+                    <button id="projectBtn"><a href="https://github.com/0515shi/Library_Management_System">GitHub</a></button> -->
+
+                    <p class="aboutMeSmallHeader">Autonomous Robot Navigation with YOLO11 Object Detection</p>
+                    <ul class="ulAboutMeWe">
+                        <li>Built a manual motor control interface in Isaac Sim and established a ROS2 bridge for seamless communication between the simulation and ROS ecosystem.</li>
+                        <li>Implemented the YOLOv11 AI model to perform real-time object recognition using a simulated camera within the Isaac Sim environment.</li>
+                        <li>Streamed camera and LiDAR sensor data to RViz for real-time visualization and environmental perception.</li>
+                        <li>Developed Python-based control logic that enables the robot to autonomously navigate, locate, and approach target objects.</li>
+                        <li>Integrated a perception pipeline combining computer vision (YOLO) with spatial awareness (LiDAR) to support intelligent decision-making.</li>
+                    </ul>
+
+                    <p class="aboutMeSmallHeader">2048 Puzzle Game - Dual Language Implementation</p>
+                    <ul class="ulAboutMeWe">
+                        <li>Implemented core 2048 game logic including tile merging, four-direction movement, random tile spawn, and win/loss detection.</li>
+                        <li>Built scoring system that accumulates points when tiles merge (value × 2) and a real-time timer tracking game duration.</li>
+                        <li>Developed a persistent ranking system storing top 10 scores with custom player names, sorted by descending scores.</li>
+                        <li>Added interactive multimedia effects for moves, tile merges, wins, and game over events.</li>
+                        <li>Created console-based GUI with color-coded tiles for improved visual clarity and accessibility.</li>
+                    </ul>
+
+
+                </div>
+            </div>       
+
+        </main>
 </body>
 </html>
