@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">    
+        <div id="navWrapper">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+
+                <li class="dropDownAboutMe">
+                    <a>About Me ▼</a>
+                    <div class="dropDownAboutMeContent">
+                        <a href="education.html">Education</a>
+                        <a href="workingExperience.html">Working Experience</a>
+                        <a href="skill.html">Skills</a>
+                    </div>
+                </li>
+                <li><a href = "projects.html">Projects</a></li>                
+                <li class="contactMe"><a href = "contactMe.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="aboutMeContainerFormat">
+
+            <h3 class="aboutMeHeader">Contact Me</h3>
+            <div class="aboutMeContentContainer">
+            
+
+
+                <p class="aboutMeSmallHeader contactMeInfo">Email: mksworkac@outlook.com</p>
+              
+                <p class="aboutMeSmallHeader contactMeInfo">Mobile No: +852 51151384</p>
+
+                <label for="inputName">Name: </label>
+                <input id="inputName" placeholder="Your Name">
+                <br>
+
+                <label for="inputEmail">Email: </label>
+                <input id="inputEmail" placeholder="Your email">
+
+                <br>
+                <label for="inputInquiry">Inquiry: </label>
+                <textarea id="inputInquiry" placeholder="Type your inquiries here..."></textarea>
+
+                <div id="submitBtnContainer">
+                    <button id="submitInfoBtn" onclick="submitInfo()">Submit</button>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
